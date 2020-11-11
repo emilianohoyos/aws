@@ -14,6 +14,10 @@
 Route::get('/gestor', 'gestor\GestorController@index');
 Route::post('/gestor2', 'gestor\GestorController@destroy')->name("gestor.delete");
 Route::post('/download/{name}', 'gestor\GestorController@download')->name("gestor.download");
+
+
+
+
 Route::get('/', 'TaskController@index');
 Route::get('/tasks', 'TaskController@getTasks')->name('datatable.tasks');
 
